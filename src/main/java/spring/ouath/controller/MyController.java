@@ -4,12 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class MainController {
+public class MyController {
 
-    @GetMapping("/")
-    public String mainAPI() {
-        return "main route";
+    @GetMapping("/my")
+    public String myAPI() {
+        return "my route";
     }
-
-
 }
